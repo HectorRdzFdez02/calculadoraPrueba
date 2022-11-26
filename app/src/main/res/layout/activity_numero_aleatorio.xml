@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#600206"
+    tools:context=".NumeroAleatorio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTituloDeAleatorio"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/tvTituloDeAleatorio"
+                android:textAlignment="center"
+                android:textColor="#FFEB3B"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="174dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/fotoAleatorio"
+                    android:layout_width="match_parent"
+                    android:layout_height="191dp"
+                    app:srcCompat="@drawable/numeroaleatorio"
+                    tools:layout_editor_absoluteY="-4dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvTextoNumeroAleatorio"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="@string/tvTextoNumeroAleatorio"
+                android:textAlignment="center"
+                android:textColor="#009688"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etNumeroMaximo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#FBF8F8"
+                    android:ems="10"
+                    android:hint="@string/etNumeroMaximo"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B1AEAE" />
+
+                <EditText
+                    android:id="@+id/etNumeroMinimo"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:backgroundTint="#FBF8F8"
+                    android:ems="10"
+                    android:hint="@string/etNumeroMinimo"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#B1AEAE" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btAleatorizarNumero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#FF0000"
+                    android:onClick="aleatorizarNumero"
+                    android:text="@string/btAleatorizarNumero" />
+
+                <TextView
+                    android:id="@+id/tvMostrarResultadoAleatorio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/btVolverNumeroAleatorio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:backgroundTint="#FF0000"
+                    android:text="@string/bVolver" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

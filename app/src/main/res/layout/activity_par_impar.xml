@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#600206"
+    tools:context=".ParImpar">
+
+    <EditText
+        android:id="@+id/etNumeroIntroducido"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.211"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713" />
+
+    <Switch
+        android:id="@+id/sNumeroParImpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switchinator"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/tbCalculadora2"
+        android:textOn="@string/tbCalculadora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <TextView
+        android:id="@+id/tvTituloParImpar"
+        android:layout_width="236dp"
+        android:layout_height="38dp"
+        android:text="@string/bParImpar"
+        android:textAlignment="center"
+        android:textColor="#35EC03"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="359dp"
+        android:layout_height="225dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262">
+
+        <ImageView
+            android:id="@+id/iParImpar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/parimpar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvIntruduceNumeroParImpar"
+        android:layout_width="267dp"
+        android:layout_height="37dp"
+        android:text="@string/tvIntruduceNumeroParImpar"
+        android:textAlignment="center"
+        android:textColor="#C306E4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.563" />
+
+    <Button
+        android:id="@+id/bCalcular"
+        android:layout_width="154dp"
+        android:layout_height="53dp"
+        android:backgroundTint="#05E47C"
+        android:onClick="calcularParImpar"
+        android:text="@string/bCalcular"
+        android:textColor="#F31606"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.707" />
+
+    <TextView
+        android:id="@+id/tvTextoResultado"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:text="@string/tvTextoResultado"
+        android:textAlignment="center"
+        android:textColor="#07DFCB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:textAlignment="center"
+        android:textColor="#07DFCB"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <Button
+        android:id="@+id/bVolverParImpar"
+        android:layout_width="242dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#FBEFEF"
+        android:onClick="cerrarParImpar"
+        android:text="@string/bVolver"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

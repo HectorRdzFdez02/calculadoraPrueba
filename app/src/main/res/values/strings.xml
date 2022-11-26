@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">BestoApp</string>
+    <string name="tvBienvenido">Welcome to this aberration</string>
+    <string name="tvOpcion">Choose an option</string>
+    <string name="bCalculadora">Calculator</string>
+    <string name="bParImpar">Pair/Odd</string>
+    <string name="bNumeroPrimo">Prime Number</string>
+    <string name="bTest">Test</string>
+    <string name="bAcercaDe">Information</string>
+    <string name="bSalirMainMenu">Exit</string>
+    <string name="tvTituloNumeroCalculadora">Calculator</string>
+    <string name="tbCalculadora">on</string>
+    <string name="tbCalculadora2">off</string>
+    <string name="tvIntruduceNumeroCalculadora">Values for calculator</string>
+    <string name="bVolver">Go back</string>
+    <string name="tvTituloNumeroPrimo">Prime number</string>
+    <string name="tvIntruduceNumero">Introduce prime number</string>
+    <string name="bSolucion">Solution</string>
+    <string name="tvTextoResultado">Result</string>
+    <string name="tvTituloParImpar">Pair or Odd</string>
+    <string name="tvIntruduceNumeroParImpar">Introduce the number</string>
+    <string name="bCalcular">Calculate</string>
+    <string name="tvTituloAcercaDe">Information</string>
+    <string name="tvPreguntaPrimera">What can you get injure in a party?</string>
+    <string name="tvPreguntaSegunda">What objects can you use as a crutch?</string>
+    <string name="tvPreguntaTercera">Choose the option 3</string>
+    <string name="tvPreguntaCuarta">1 plus 1 is \"?\" who was going to tell me</string>
+    <string name="btLimpiar">Clean</string>
+    <string name="opcionTres">Three</string>
+    <string name="bocata">sandwich</string>
+    <string name="opcion3">Option 3</string>
+    <string name="comprobar">check</string>
+    <string name="tobillo">ankle</string>
+    <string name="rodilla">knee</string>
+    <string name="brazo">arm</string>
+    <string name="higado">liver</string>
+    <string name="paloLargo">Long stick</string>
+    <string name="baston">walking stick</string>
+    <string name="cubata">mixed drink</string>
+    <string name="muleta">crutch</string>
+    <string name="bNumeroAleatorio">Random number</string>
+    <string name="tvSaludoAcercaDe">Hiiiiiii</string>
+    <string name="tvTituloDeAleatorio">Random number</string>
+    <string name="tvTextoNumeroAleatorio">Introduce the limits</string>
+    <string name="etNumeroMaximo">Maximun</string>
+    <string name="etNumeroMinimo">Minimun</string>
+    <string name="btAleatorizarNumero">Randomize</string>
+    <string-array name="estaciones">
+        <item>Autumn</item>
+        <item>Winter</item>
+        <item>Summer</item>
+        <item>Spring</item>
+    </string-array>
+    <string-array name="nivelIngles">
+        <item>C1</item>
+        <item>A2</item>
+        <item>B2</item>
+        <item>D3</item>
+    </string-array>
+    <string name="tvPreguntaSpinerUno">What station have the most holidays</string>
+    <string name="tvPreguntaSpinerDos">What level of eanglish is better</string>
+    <string name="bReseteoTest">Reload test</string>
+    <string name="bVarios">Various</string>
+    <string name="btCambioIdioma">Spanish</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

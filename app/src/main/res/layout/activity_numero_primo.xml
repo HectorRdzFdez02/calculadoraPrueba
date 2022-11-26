@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#600206"
+    tools:context=".NumeroPrimo">
+
+    <TextView
+        android:id="@+id/tvTituloNumeroPrimo"
+        android:layout_width="236dp"
+        android:layout_height="38dp"
+        android:text="@string/tvTituloNumeroPrimo"
+        android:textAlignment="center"
+        android:textColor="#EA0251"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="359dp"
+        android:layout_height="225dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.262">
+
+        <ImageView
+            android:id="@+id/iParImpar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/numeroprimo" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvIntruduceNumero"
+        android:layout_width="313dp"
+        android:layout_height="33dp"
+        android:text="@string/tvIntruduceNumero"
+        android:textAlignment="center"
+        android:textColor="#5704EC"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.545" />
+
+    <EditText
+        android:id="@+id/etNumeroPrimoIntroducido"
+        android:layout_width="142dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.182"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.688" />
+
+    <Button
+        android:id="@+id/bSolucion"
+        android:layout_width="166dp"
+        android:layout_height="46dp"
+        android:onClick="calcularPrimo"
+        android:text="@string/bSolucion"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.686" />
+
+    <TextView
+        android:id="@+id/tvTextoResultado"
+        android:layout_width="183dp"
+        android:layout_height="43dp"
+        android:text="@string/tvTextoResultado"
+        android:textAlignment="center"
+        android:textColor="#F3DA03"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <TextView
+        android:id="@+id/tvResultadoPrimo"
+        android:layout_width="176dp"
+        android:layout_height="43dp"
+        android:textAlignment="center"
+        android:textColor="#F3DA03"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <Button
+        android:id="@+id/bVolverParImpar"
+        android:layout_width="242dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#7EEA02"
+        android:onClick="cerrarNumeroPrimo"
+        android:text="@string/bVolver"
+        android:textColor="#EC0202"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <Switch
+        android:id="@+id/sNumeroPrimo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Switchinator"
+        android:textColor="#FFFFFF"
+        android:textOff="@string/tbCalculadora2"
+        android:textOn="@string/tbCalculadora"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.613" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
